@@ -11,6 +11,9 @@ TARGET_KERNEL_CONFIG := exynos9810-starlte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/universal9810-star
 
 # Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/libbt_vndcfg.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Inherit common board flags
