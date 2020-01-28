@@ -16,3 +16,7 @@ PRODUCT_MODEL := SM-G960F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+# Use Custom OTA
+PRODUCT_PROPERTY_OVERRIDES += \
+    lineage.updater.uri=https://raw.githubusercontent.com/evilexecutable/Q_OTA/master/LOS_STAR.json
